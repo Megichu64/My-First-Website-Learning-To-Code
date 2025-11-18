@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--meta data is used to define the site's metadata for things like character sets (UTF-8) and much more. UTF-8 stands for Universal Character Set (UCS) Transformation Format 8. In computing, a byte = 8 bits, or binary digits (0s and 1s). UTF-8 supports every character in the Unicode character set - and this includes characters and symbols from all writing systems, languages, and technical symbols.-->
+  <title>Learning to Code</title>
+  <!--title shows up as the browser page's name.-->
+  <!--TODO: Make it so title is not visible in website.-->
+  <link rel="stylesheet" href="./styles.css/">
+<!-- This links the relationship between the linked resource and the HTML document. Specifically, for a CSS document added in a separate file. Make sure to place link ref inside the head element. Usually, the link rel is used for stylesheets, icons, and fonts. -->
+<link rel="preconnect"  href="https://fonts.googleapis.com">
+<!-- For this element, it tells the browser to pre-load information onto the site, speeding up a website's loading time. In this case, the href is used to reference the free fonts available through Google. Google has an array of html and css code to link to to allow for their fonts or stylesheets to be used on your website. -->
+<link rel="icon" href="favicon.ico ">
+<!-- This links the browser icon (found next to the website title) to the actual "favorite icon" file, typically the brand's icon.-->
+<meta property="og:title" content="Megan's First Website"/>
+<!--meta content can include og (open graph) properties which help with how users see your content when searched in google or shared on social media. Examples include og:title, og:type (website, article, video, audio), og:image, og:url, og:description, og:audio, og:video, og:locale, etc.)-->
+<!--well-crafted OG properties can enhance the appearance for your content in users' feeds to improve SEO (search engine optimization).-->
+<meta name="description" content="This is Megan's first attempt at writing her own HTML code to better understand website development. Slowly but surely, it should improve in quality!" />
+<meta property="og:type" content="website" />
+<style>
+#UniqueHeader {
+  background-color:cadetblue;
+  color: whitesmoke;
+  padding: 40px;
+  text-align: center;
+}
+.city {
+  background-color: orange;
+  color: black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.header {
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<main></main>
+<!--The main element embodies the main content of a document or app.-->
+<section></section>
+<!--A section divides up content of a page and is usually associated with group of content under a header.-->
+<div class="header">
+<h4>Project Started: November 9, 2025 </h4>
+</div>
+<div style="text-align: center;">
+  My First Website: Learning To Code
+</div>
+<h2>Heading Sizes: H1-H6</h2>
+<p>Heading sizes 1-6 start from big to small. The h1 element usually is the most important, and gradually sizes down to h6. See the examples down below for the formatting.</p>
+<div style="text-align: center;">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</div>
+<h2>Images, src, href and the importance of anchor &lt;a&gt; elements</h2>
+<p>The image element &lt;img&gt; is a form of void element, so no closing tag is needed. Using &lt;img&gt;, you can attach pictures right to the website. The source attribute (ex: img src, source src, href src, audio src, video src, etc) links to a specific file, webpage, or media source. You can tell what type of &lt;src&gt; will be used based on the element name that preceeds it.</p>
+<p>Anchor elements &lt;a&gt; allow you to link to another webpage. href means hypertext reference, and this attribute guides to a specific hyperlink location. You can also include text between the opening and closing tags to write your own text, which will give the user an idea of where the text will lead to. Additionally, more written text can be written before and after the anchor element!</p>
+</p>
+<img src="/Users/meganamon/Downloads/Space Cat Wallpaper HD Background Desktop.jpg" width="480" height="270">
+<p><a href="https://www.freecodecamp.org/learn">Click here to access a hyperlink!</a></p>
+<ul>
+<!--unorderder list=bulleted list-->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+<!--li = list item, nested in a list-->
+    <li>
+      <a href="https://www.freecodecamp.org/learn" alt="Learn to code at freeCodeCamp">item 4</a>
+    </li>
+<!-- ^^^ If you are adding an anchor element with href to a list, be sure to embed it inside the list element like shown above-->
+</ul>
+<ol>
+    <li>number 1</li>
+    <li>number 2</li>
+    <li>number 3</li>
+</ol>
+<!--ordered list=numbered list-->
+<figure></figure>
+<!--a figure element is self-contained content and will allow you to associate an image with a caption-->
+<figcaption></figcaption>
+<!--caption for figure-->
+<figure>
+  <a href="https://www.freecodecamp.org/learn">
+    <img src="/Users/meganamon/Downloads/free_code_camp_logo.png" alt="Logo of freeCodeCamp">
+  </a>
+  <figcaption>
+    This is the website I learned HTML.
+  </figcaption>
+</figure>
+<!--^^^This is how to correctly format an img scr within an anchor within a figure element. Any content inside an anchor (ex: <a href="HYPERLINK" alt="ALT TITLE"><IMG SRC="IMAGE FILE"></a>)-->
+<em>Emphasis</em>
+<!--emphasis=italics-->
+<strong>Strong</strong>
+<!--strong=bold-->
+<div>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+</div>
+<!--div element is used to group HTML elements that will share a set of CSS styles. It is commonly used in html but should not ne overused. For example, sometimes a section may be more appropriate.-->
+<section>
+  <h2>Mammals</h2>
+  <p>Mammals are warm-blooded animals with fur or hair. Most give birth to live young.</p>
+  <ul>
+    <li>Lion</li>
+    <li>Elephant</li>
+    <li>Dolphin</li>
+  </ul>
+</section>
+<section>
+  <h2>Fish</h2>
+  <p>Cold-blooded aquatic animals that have gills for breathing and fins for movement. They are the largest group of vertebrates.</p>
+    <ul>
+      <li>Shark</li>
+      <li>Salmon</li>
+      <li>Eel</li>
+    </ul>
+</section>
+<!--section elements have thematic groupings that are separated by means of semantics, or groupings of similar words/phrases-->
+<div id="main heading"></div>
+<!--the id attributes allows you to set styles to an id unique to the whole document.-->
+<div class="box red_box"></div>
+<div class="box blue_box"></div>
+<!-- the class attribute allows you to set styles to many elements, such as alterations from Javascript or CSS.-->
+<h2>HTML Entities - How the heck do you type &lt; and &gt; in HTML?</h2>
+<p>When coding in html, &lt; and &gt; will not show up on a webpage unless HTML entities are used. This is a named character reference. In fact, if you look at the html file of this document, you will see many elements and notes that are not visible on the webpage. Named references start with an ampersand sign and end with a semicolon. By using a named character reference, the HTML reader will not confuse this with an actual HTML element.</p>
+<p>Additionally, you can use &#60; or &#x3C; which are examples of using the decimal numeric and hexadecimal numeric references, respectivly.</p>
+<script src="path-to-javascript-file.js"></script>
+<!--the script element is used to embed executable code. Also commonly used to execute javascript in a separate file. Use the src attribute to link.-->
+<h1 id="UniqueHeader">What's the difference: id vs. class?</h1>
+<h2>id</h2>
+<p>The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document.The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id. The id attribute CANNOT use spaces, unlike the class attribute.</p>
+<p>The id attribute was used for the blue banner header above.</p>
+<h2>class</h2>
+<p>In contrast to the id attribute, the class attribute value does not need to be unique to the page and can contain spaces. See the example below:</p>
+<div class="city">
+  <h3>London</h3>
+  <p>London is the capital of England.</p>
+</div>
+<div class="city">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+<div class="city">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<h2>script</h2>
+<p>The script element is used to embed executable code. Typically used for Javascript to create more dynamic and interactive webpages. Javascript code should be written in a separate file for best practice, but it can be executed in HTML file.</p>
+<script>
+  // alert("Welcome to my first handmade HTML website!");
+  <!--If you would like to enable this alert, remove the //-->
+</script>
+<h2>meta content</h2>
+  <p>When you use og: protocol (open graph) in your meta data, this will make your website look more appealing when shared across multiple social platforms (Facebook, Instagram, Threads, X, etc). Some social media platforms have unique tags for card formatting on their website, so check out the developer pages on the individual platforms. See how open graph data looks when well-utilized below:</p>
+  <img src="https://miro.medium.com/v2/1*nSgCOm3fPVXROiaHGLuKbw.jpeg" width="350">
+<div>
+  <h2>audio and video</h2>
+  <p>Audio and video elements work similarly and are fairly simple to code. To add an audio player, use the controls attribute. To loop music, use the loop attribute. To start music muted, use the muted attribute (this on/off nature of muted state is a good exanple of a boolean attribute).
+  <p>Depending on browsers, some media players won't be supported, so it's a good idea to add a few sourse elements for browsers to pick from in case the first or second optiob fails. Code this as:
+  <p>&lt;source src="audio.ogg" type="audio/ogg"</p>
+  <p>&lt;source src="audio.wav" type="audio/wav"</p>
+  <p>&lt;source src="audio.mp3" type="audio/mpeg"</p></p>
+  <audio src="/Users/meganamon/Music/Music/Media.localized/Music/Zane Little/Unknown Album/Zane Little - Ill-Fated Fantasy.mp3"
+  controls
+  muted
+  loop
+></audio>
+<p>For video elements, you code the same way as an audio element: &lt;audio src=""&gt;&lt;/audio&gt; but replace audio with video. The loop, controls and muted attributes all apply to video as well. If you wanted to display an image while the video is downloading, you can use the poster attribute.</p>
+</div>
+</body>
+<footer>No Copyright &copy; - HappyInc. &trade;</footer>
+<!--IMPORTANT: BE SURE TO ALWAYS SAVE CONTENT FREQUENTLY-->
+</html>
